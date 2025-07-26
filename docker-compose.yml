@@ -1,0 +1,8 @@
+services:
+  lookscanned:
+    image: ghcr.io/guyl94/lookscanned
+    build: .
+    container_name: lookscanned-app
+    ports:
+      - "8123:80"
+    restart: unless-stopped
